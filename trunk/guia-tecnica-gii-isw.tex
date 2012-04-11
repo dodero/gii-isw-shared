@@ -23,7 +23,7 @@
 
 \lhead{Guía Técnica de ISW}
 \rhead{Curso 2011/2012}
-\cfoot{Página \thepage}
+\cfoot{Pág. \thepage}
 
 \usepackage{hyperref}
 
@@ -57,9 +57,12 @@ prácticas y el proyecto de las asignaturas de la especialidad de Ingeniería de
 Software en el Grado en Ingeniería Informática y en el segundo ciclo de
 Ingeniería Informática. Esta guía es válida para las siguientes asignaturas:
 
-\begin{itemize} \item Diseño de Sistemas Software (DSS) \item Ingeniería Web
-(IW) \item Implementación e Implantación de Sistemas Software (IISS) \item
-\ldots \end{itemize}
+\begin{itemize}
+\item Diseño de Sistemas Software (DSS)
+\item Ingeniería Web (IW)
+\item Implementación e Implantación de Sistemas Software (IISS)
+\item \textit{To be completed}
+\end{itemize}
 
 La idea de este documento es el de ofrecer una guía que permita a los alumnos/as
 de dichas asignaturas reducir los problemas técnicos y centrarse en la
@@ -91,7 +94,7 @@ documento \href{http://www.xtec.es/~acastan/textos/Java.pdf}{Introducción al
 Java para programadores C++}.
 
 
-\subsection{bibliotecas Java} \label{sec-2-2} Java, a diferencia de C++,
+\subsection{Bibliotecas Java} \label{sec-2-2} Java, a diferencia de C++,
 presenta casi desde sus comienzos una completa biblioteca de clases que
 implementan muchas funcionalidades. De momento nos centraremosen las siguientes:
 
@@ -604,8 +607,8 @@ fichero \textbf{beans.xml} en el directorio \emph{resources}.
 
 \begin{lstlisting}
 <bean id="myDataSource"
-      class="org.apache.commons.dbcp.BasicDataSource
-       destroy-method="close">
+      class="org.apache.commons.dbcp.BasicDataSource"
+      destroy-method="close">
   <property name="driverClassName"
             value="com.mysql.jdbc.Driver"/>
   <property name="url"
